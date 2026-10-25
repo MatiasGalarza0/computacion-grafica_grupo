@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{E942DA81-EF9E-48EA-B25C-F7A86C0D55D0}</ProjectGuid><OutputType>Exe</OutputType><RootNamespace>GeoLab2D</RootNamespace><AssemblyName>Pruebas</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><FileAlignment>512</FileAlignment><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects><OutputPath>bin\$(Configuration)\</OutputPath></PropertyGroup>
+<PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize></PropertyGroup>
+<PropertyGroup Condition=" '$(Configuration)' == 'Release' "><Optimize>true</Optimize><DebugType>pdbonly</DebugType></PropertyGroup>
+<ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/></ItemGroup>
+<ItemGroup><Compile Include="Program.cs"></Compile><Compile Include="..\GeoLab2D\Matematica\Geometria.cs" /><Compile Include="..\GeoLab2D\Matematica\Vector2.cs" /><Compile Include="..\GeoLab2D\Matematica\Matriz3.cs" /><Compile Include="..\GeoLab2D\Matematica\Pruebas.cs" /><Compile Include="..\GeoLab2D\Figuras\Figura.cs" /></ItemGroup><Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/></Project>
